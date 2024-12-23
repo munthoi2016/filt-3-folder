@@ -14,7 +14,7 @@ def copy_matching_files_and_folders(source_dir, dest_dir, num_chars, prefix, pro
         item_path = os.path.join(source_dir, item)
 
         if item.startswith(prefix):
-            name_key = item[len(prefix):len(prefix) + num_chars]  # Bỏ qua prefix và lấy num_chars ký tự sau đó
+            name_key = item[len(prefix):len(prefix) + num_chars]  # Bỏ qua prefix và lấy num_chars ký tự sau
         else:
             name_key = item[:num_chars]  # Lấy num_chars ký tự đầu tiên
 
